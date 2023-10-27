@@ -17,11 +17,12 @@ def readChromosomeLengthData(chromosomeLengths):
     chromosomeLengthDict = {}
     with open(chromosomeLengths,'r') as F:
         for line in F:
-            assemblyID,chromID,chromLength = line.strip().split('\t')
-            if assemblyID not in chromosomeLengthDict:
-                chromosomeLengthDict[assemblyID] = {}
-            if chromID not in chromosomeLengthDict[assemblyID]:
-                chromosomeLengthDict[assemblyID][chromID] = int(chromLength)
+            if '#' not in line:
+                assemblyID,chromID,chromLength = line.strip().split('\t')
+                if assemblyID not in chromosomeLengthDict:
+                    chromosomeLengthDict[assemblyID] = {}
+                if chromID not in chromosomeLengthDict[assemblyID]:
+                    chromosomeLengthDict[assemblyID][chromID] = int(chromLength)
     return(chromosomeLengthDict)
 
 
@@ -273,7 +274,7 @@ def plotData(densityData,methylationDensity,chromosomeLengthDict,colorMap,gcData
 
             ax5 = ax1.twinx()
             ax5.grid(False)
-            ax5.spines.right.set_position(("axes", 1.32))
+            #ax5.spines.right.set_position(("axes", 1.32))
             if assemblyID in geneDensity and chromID in geneDensity[assemblyID]:
                 positions,counts = zip(*geneDensity[assemblyID][chromID])
                 minCount = min(counts)
