@@ -432,6 +432,7 @@ def plotTimes(compiledTimes,methylationDensity,chromosomeLengthDict,colorMap,gcD
             for featureID in compiledTimes[assemblyID][chromID]:
                 # fig, ax1 = plt.subplots(figsize=(25,12.5))
                 fig, ax1 = plt.subplots(figsize=(20,10))
+                # fig, ax1 = plt.subplots(figsize=(15,7.5))
                 plt.rcParams['font.size'] = 16
                 legendDict = {}
                 for timeID in compiledTimes[assemblyID][chromID][featureID]:
@@ -562,7 +563,7 @@ def plotTimes(compiledTimes,methylationDensity,chromosomeLengthDict,colorMap,gcD
                 
                 ax5 = ax1.twinx()
                 ax5.grid(False)
-                ax5.spines.right.set_position(("axes", 1.32))
+                #ax5.spines.right.set_position(("axes", 1.32))
                 if assemblyID in geneDensity and chromID in geneDensity[assemblyID]:
                     positions,counts = zip(*geneDensity[assemblyID][chromID])
                     minCount = min(counts)
@@ -579,10 +580,10 @@ def plotTimes(compiledTimes,methylationDensity,chromosomeLengthDict,colorMap,gcD
                     lastPos,lastGeneCount = geneArray[-1]
                     lastPos = lastPos + (lastWindowLength/2)
                     ax5.plot((secondToLastPos,lastPos),(secondToLastGeneCount,lastGeneCount), color='blue', marker='o', linewidth=4, markersize=4.5, linestyle='dashed')
-                    ax5.spines['right'].set_color('blue')
-                    ax5.tick_params(axis='y', colors='blue')
-                    ax5.set_ylabel('Transcript count per window (' + str(windowSize) + ' bp)')
-                    ax5.yaxis.get_label().set_color(p5.get_color())
+                    #ax5.spines['right'].set_color('blue')
+                    #ax5.tick_params(axis='y', colors='blue')
+                    #ax5.set_ylabel('Transcript count per window (' + str(windowSize) + ' bp)')
+                    #ax5.yaxis.get_label().set_color(p5.get_color())
                     #plt.margins(0)
                     ax5.margins(0)
                     legendInfo = mlines.Line2D([], [], color='blue', marker='o',markersize=10, label='Transcript count (' + str(minCount) + '-' + str(maxCount) + ' per 1 Mb)', alpha=1.0, fillstyle='full', markeredgecolor='blue', markeredgewidth=0.0, linestyle='dashed')
