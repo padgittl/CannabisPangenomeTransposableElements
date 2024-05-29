@@ -1,0 +1,10 @@
+data/BCMa.unmasked.fasta.mod.EDTA.TEanno.sum
+data/BCMb.unmasked.fasta.mod.EDTA.TEanno.sum
+data/BOAXa.unmasked.fasta.mod.EDTA.TEanno.sum
+data/BOAXb.unmasked.fasta.mod.EDTA.TEanno.sum
+data/KCDv1a.unmasked.fasta.mod.EDTA.TEanno.sum
+data/KCDv1b.unmasked.fasta.mod.EDTA.TEanno.sum
+data/SODLa.unmasked.fasta.mod.EDTA.TEanno.sum
+data/SODLb.unmasked.fasta.mod.EDTA.TEanno.sum
+data/YMv2a.unmasked.fasta.mod.EDTA.TEanno.sum
+data/YMv2b.unmasked.fasta.mod.EDTA.TEanno.sum

@@ -1,7 +1,7 @@
 # create conda environment
 create_env.sh
 
-# download files
+# download gff files -- these include gene models and EDTA output
 wget https://salk-tm-pub.s3.us-west-2.amazonaws.com/cannabis_pangenome/soloIntactLTRs/SODLb.primary_high_confidence.gff3.tar.gz
 wget https://salk-tm-pub.s3.us-west-2.amazonaws.com/cannabis_pangenome/soloIntactLTRs/SODLb.unmasked.fasta.mod.EDTA.TEanno.gff3.tar.gz
 
