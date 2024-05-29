@@ -321,6 +321,7 @@ def plotCondensed(densityData,compiledTimes,methylationDensity,chromosomeLengthD
                 ax1.margins(0)
                 legendInfo = mlines.Line2D([], [], color=colorMap[featureID], marker='s',linestyle="None",markersize=10, label=featureID, alpha=1.0, fillstyle='full', markeredgecolor=colorMap[featureID], markeredgewidth=0.0)
                 ticks = ax1.get_xticks()/1000.0
+                ax1.set_xticks(ticks)
                 ax1.set_xticklabels(ticks.astype(int))
                 if featureID not in legendDict1:
                     legendDict1[featureID] = legendInfo
@@ -362,6 +363,7 @@ def plotCondensed(densityData,compiledTimes,methylationDensity,chromosomeLengthD
                 ax2.margins(0)
                 ax2.set_ylim(0,100)
                 ticks = ax2.get_xticks()/1000.0
+                ax2.set_xticks(ticks)
                 ax2.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='black', marker='o',markersize=6, label='Methylation probability', alpha=1.0, fillstyle='full', markeredgecolor='black', markeredgewidth=0.0)
                 if 'Methylation_probability' not in legendDict1:
@@ -407,6 +409,7 @@ def plotCondensed(densityData,compiledTimes,methylationDensity,chromosomeLengthD
                 else:
                     ax3.set_ylim(0,1)
                 ticks = ax3.get_xticks()/1000.0
+                ax3.set_xticks(ticks)
                 ax3.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='#E0A458', marker='o',markersize=6, label='Observed/expected CpG', alpha=1.0, fillstyle='full', markeredgecolor='#E0A458', markeredgewidth=0.0)
                 if 'Observed/expected CpG' not in legendDict1:
@@ -449,6 +452,7 @@ def plotCondensed(densityData,compiledTimes,methylationDensity,chromosomeLengthD
                 ax4.margins(0)
                 ax4.set_ylim(0,100)
                 ticks = ax4.get_xticks()/1000.0
+                ax4.set_xticks(ticks)
                 ax4.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='#824C71', marker='o',markersize=6, label='GC content (%)', alpha=1.0, fillstyle='full', markeredgecolor='#824C71', markeredgewidth=0.0, linestyle='dashed')
                 if 'GC content (%)' not in legendDict1:
@@ -483,6 +487,7 @@ def plotCondensed(densityData,compiledTimes,methylationDensity,chromosomeLengthD
                 ax5.margins(0)
                 ax5.set_ylim(0,)
                 ticks = ax5.get_xticks()/1000.0
+                ax5.set_xticks(ticks)
                 ax5.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='blue', marker='o',markersize=6, label='Transcript count (' + str(minCount) + '-' + str(maxCount) + ' per ' + str(windowSize) + ' bp bins)', alpha=1.0, fillstyle='full', markeredgecolor='blue', markeredgewidth=0.0, linestyle='dashed')
                 if 'Transcript count' not in legendDict1:
@@ -539,6 +544,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
                 ax1.margins(0)
                 legendInfo = mlines.Line2D([], [], color=colorMap[featureID], marker='s',linestyle="None",markersize=10, label=featureID, alpha=1.0, fillstyle='full', markeredgecolor=colorMap[featureID], markeredgewidth=0.0)
                 ticks = ax1.get_xticks()/1000.0
+                ax1.set_xticks(ticks)
                 ax1.set_xticklabels(ticks.astype(int))
                 if featureID not in legendDict1:
                     legendDict1[featureID] = legendInfo
@@ -615,6 +621,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
                 ax2.margins(0)
                 ax2.set_ylim(0,100)
                 ticks = ax2.get_xticks()/1000.0
+                ax2.set_xticks(ticks)
                 ax2.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='black', marker='o',markersize=6, label='Methylation probability', alpha=1.0, fillstyle='full', markeredgecolor='black', markeredgewidth=0.0)
                 if 'Methylation_probability' not in legendDict1:
@@ -663,6 +670,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
                 else:
                     ax3.set_ylim(0,1)
                 ticks = ax3.get_xticks()/1000.0
+                ax3.set_xticks(ticks)
                 ax3.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='#E0A458', marker='o',markersize=6, label='Observed/expected CpG', alpha=1.0, fillstyle='full', markeredgecolor='#E0A458', markeredgewidth=0.0)
                 if 'Observed/expected CpG' not in legendDict1:
@@ -706,6 +714,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
                 ax4.margins(0)
                 ax4.set_ylim(0,100)
                 ticks = ax4.get_xticks()/1000.0
+                ax4.set_xticks(ticks)
                 ax4.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='#824C71', marker='o',markersize=6, label='GC content (%)', alpha=1.0, fillstyle='full', markeredgecolor='#824C71', markeredgewidth=0.0, linestyle='dashed')
                 if 'GC content (%)' not in legendDict1:
@@ -741,6 +750,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
                 ax5.margins(0)
                 ax5.set_ylim(0,)
                 ticks = ax5.get_xticks()/1000.0
+                ax5.set_xticks(ticks)
                 ax5.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color='blue', marker='o',markersize=6, label='Transcript count (' + str(minCount) + '-' + str(maxCount) + ' per ' + str(windowSize) + ' bp bins)', alpha=1.0, fillstyle='full', markeredgecolor='blue', markeredgewidth=0.0, linestyle='dashed')
                 if 'Transcript count' not in legendDict1:
@@ -819,6 +829,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
             ax8.set_ylim(0,100)
             ax8.margins(0)
             ticks = ax8.get_xticks()/1000.0
+            ax8.set_xticks(ticks)
             ax8.set_xticklabels(ticks.astype(int))
 
             if 'Ty1' in ty1_specificChromDataDict[assemblyID][chromID]:
@@ -847,6 +858,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
                 ax10.margins(0)
                 ax10.set_ylim(0,)
                 ticks = ax10.get_xticks()/1000.0
+                ax10.set_xticks(ticks)
                 ax10.set_xticklabels(ticks.astype(int))
 
                 ax10.xaxis.set_tick_params(labelsize=16)
@@ -881,6 +893,7 @@ def plotData(densityData,compiledTimes,methylationDensity,chromosomeLengthDict,g
                 ax10.margins(0)
                 ax10.set_ylim(0,)
                 ticks = ax10.get_xticks()/1000.0
+                ax10.set_xticks(ticks)
                 ax10.set_xticklabels(ticks.astype(int))
                 legendInfo = mlines.Line2D([], [], color=ltrColorMap[ltrTypeLabel], marker='s',linestyle="None",markersize=10, label='Ty3-LTR solo:intact ratio', alpha=1.0, fillstyle='full', markeredgecolor=ltrColorMap[ltrTypeLabel], markeredgewidth=0.0)
                 if 'Ty3 solo:intact ratio' not in legendDict4:
@@ -922,6 +935,7 @@ def plotSimplifiedTimeData(compiledTimes,chromosomeLengthDict,colorMap,lastWindo
                     ax1.set_ylim(0,100)
                     legendInfo = mlines.Line2D([], [], color=colorDict[timeID], marker='s',linestyle="None",markersize=10, label=labelDict[timeID], alpha=1.0, fillstyle='full', markeredgecolor=colorDict[timeID], markeredgewidth=0.0)
                     ticks = ax1.get_xticks()/1000.0
+                    ax1.set_xticks(ticks)
                     ax1.set_xticklabels(ticks.astype(int))
                     if timeID not in legendDict:
                         legendDict[timeID] = legendInfo
