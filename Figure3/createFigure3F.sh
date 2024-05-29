@@ -1,3 +1,6 @@
+# create conda environment
+create_env.sh
+
 # download files
 wget https://salk-tm-pub.s3.us-west-2.amazonaws.com/cannabis_pangenome/te_landscape_analysis/SODLb.loreme.chr7.bed
 wget https://salk-tm-pub.s3.us-west-2.amazonaws.com/cannabis_pangenome/te_landscape_analysis/SODLb.primary_high_confidence_chr7.gff3
