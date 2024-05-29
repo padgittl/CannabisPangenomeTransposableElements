@@ -1,0 +1,2 @@
+## assemblyID	chromosomeID	chromosomeLength
+SODLb	chr7	70719495
