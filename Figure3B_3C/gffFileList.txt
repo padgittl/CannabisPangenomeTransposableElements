@@ -1,0 +1,8 @@
+data/AH3Ma.unmasked.fasta.mod.EDTA.TEanno.gff3
+data/AH3Mb.unmasked.fasta.mod.EDTA.TEanno.gff3
+data/BCMa.unmasked.fasta.mod.EDTA.TEanno.gff3
+data/BCMb.unmasked.fasta.mod.EDTA.TEanno.gff3
+data/EH23a.unmasked.fasta.mod.EDTA.TEanno.gff3
+data/EH23b.unmasked.fasta.mod.EDTA.TEanno.gff3
+data/SODLa.unmasked.fasta.mod.EDTA.TEanno.gff3
+data/SODLb.unmasked.fasta.mod.EDTA.TEanno.gff3
