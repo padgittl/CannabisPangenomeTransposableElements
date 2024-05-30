@@ -1,5 +1,5 @@
 # Cannabis Pangenome Transposable Elements
 
 <p align="center">
-  <img src="utilityFiles/SODLb_chr7_TEs_distribution_0_70719495_window1000000.png" title="SODLb TE landscape">
+  <img src="utilityFiles/draftCompiledTEs_v10.png" title="SODLb TE landscape">
 </p>
