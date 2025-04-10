@@ -1,0 +1,2 @@
+## assemblyID	chromosomeID	chromosomeLength
+AH3Mb	chrY	110682302

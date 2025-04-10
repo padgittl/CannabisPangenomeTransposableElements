@@ -1,0 +1,2 @@
+## assemblyID	chromosomeID	chromosomeLength
+AH3Ma	chrX	84231629

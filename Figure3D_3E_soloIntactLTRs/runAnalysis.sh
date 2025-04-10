@@ -25,3 +25,8 @@ python scripts/calculateSoloIntactRatio.py combinedUnfiltered.tsv combinedFilter
 
 # calculate solo:intact LTR ratio for full assembly
 python scripts/calculateGlobalSoloIntactRatio.py combinedUnfiltered.tsv combinedFiltered_window5000bp.tsv gffFileList.txt 5000 cannabis
+
+# plot the solo:intact LTR ratio
+python scripts/plotSoloIntactData.v2.py data/AH3Ma_chromosomeLengths_window1000000_chrX.txt data/AH3Ma_Ty1_soloIntactRatio_window1000000_chrX.tsv data/AH3Ma_Ty3_soloIntactRatio_window1000000_chrX.tsv AH3Ma 1000000 0 84231629
+python scripts/plotSoloIntactData.v2.py data/AH3Mb_chromosomeLengths_window1000000_chrY.txt data/AH3Mb_Ty1_soloIntactRatio_window1000000_chrY.tsv data/AH3Mb_Ty3_soloIntactRatio_window1000000_chrY.tsv AH3Mb 1000000 0 110682302
+
